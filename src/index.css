@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,69 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+body {
+    background-color: black;
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  box-shadow: 3px 4px 5px rgb(0 0 0 / 50%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.clock {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #239ad1;
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 7px;
+  margin-top: 40px;
+}
+
+.title {
+  color: #239ad1;
+  font-size: 40px;
+}
+
+#button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 250px;
+  padding: 30px;
+}
+
+.buttons {
+  display:inline-block;
+  padding:0.7em 1.4em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.15em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-weight:400;
+  color:#FFFFFF;
+  background-color: black;
+  color: #239ad1;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  text-align:center;
+  position:relative;
+}
+
+.buttons:hover {
+  background-color: #132735;
+}
+
